@@ -13,8 +13,8 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -89,6 +89,7 @@ alias mv='mv -i'
 
 # Set any PATH exports
 export PATH=$PATH:/home/guth/Sublime_Text_2/
+export PATH=$PATH:/home/guth/dotfiles/
 alias sub="sub.sh"
 
 #export PATH=$PATH:/home/guth/google_appengine/
