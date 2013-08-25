@@ -89,11 +89,11 @@ alias mv='mv -i'
 
 # Set any PATH exports
 export PATH=$PATH:/home/guth/Sublime_Text_2/
-export PATH=$PATH:/home/guth/dotfiles/
+#export PATH=$PATH:/home/guth/dotfiles/
 alias sub="sub.sh"
 
 #export PATH=$PATH:/home/guth/google_appengine/
-alias dev='dev_appserver.py'
+#alias dev='dev_appserver.py'
 
 #-------------------------------------------------------------
 # The 'ls' family (this assumes you use a recent GNU ls)
