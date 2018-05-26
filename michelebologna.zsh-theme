@@ -70,7 +70,7 @@ ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE="$red<>"
 
 NEWLINE=$'\n'
 PROMPT='$current_dir_output%1(j. [$jobs_bg].)'
-GIT_PROMPT='$(out=$(git_prompt_info)$(git_prompt_status)$(git_remote_status);if [[ -n $out ]]; then printf %s " $white($green$out$white)$reset";fi)'
+GIT_PROMPT='$(out=$(git_prompt_info);if [[ -n $out ]]; then printf %s " $white($green$out$white)$reset";fi)'
 PROMPT+="$GIT_PROMPT"
 PROMPT+="${NEWLINE}$last_command_output%#$reset "
 RPROMPT=''
