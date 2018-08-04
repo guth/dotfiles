@@ -44,7 +44,7 @@ for i in `hostname`; local hostname_normal_color=$color_array[$[((#i))%7+1]]
 local -a hostname_color
 hostname_color=%(!.$hostname_root_color.$hostname_normal_color)
 
-local current_dir_color=$blue
+local current_dir_color=$magenta
 local username_command="%n"
 local hostname_command="%m"
 local current_dir="%~"
