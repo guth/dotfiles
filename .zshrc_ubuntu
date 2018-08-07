@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/guth/.oh-my-zsh
+export ZSH="/home/guth/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="michelebologna"
+ZSH_THEME="guth"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -48,7 +48,10 @@ ZSH_THEME="michelebologna"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
@@ -93,18 +96,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 # export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-# export CLICOLOR=1
-# export LSCOLORS=ExFxBxDxCxegedabagacad
+-# export CLICOLOR=1
+-# export LSCOLORS=ExFxBxDxCxegedabagacad
 
-export EDITOR=/snap/bin/sub
+export EDITOR=/snap/bin/subl
 alias mkdir="mkdir -pv"
 alias sub="/snap/bin/subl"
 #   ---------------------------
 #   4. SEARCHING
 #   ---------------------------
-alias qfind="find . -name "                 # qfind:    Quickly search for file
+alias qfind="find . -name " #qfind:    Quickly search for file
+alias qgrep="grep -R -i "
 
 #   my_ps: List processes owned by my user:
 #   ------------------------------------------------------------
