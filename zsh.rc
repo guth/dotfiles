@@ -104,11 +104,29 @@ source /opt/ros/noetic/setup.zsh
 export EDITOR=/usr/local/bin/sub
 
 alias mkdir="mkdir -pv"
+alias sub="/usr/bin/subl"
 
 #   ---------------------------
 #   4. SEARCHING
 #   ---------------------------
 alias qfind="find . -name "                 # qfind:    Quickly search for file
+alias qgrep="grep -R -i "
+
+##### BEGIN Udacity Robotics section
+
+# There's an issue with Gazebo and VMWare's 3D acceleration. This fixes it.
+export SVGA_VGPU10=0
+
+# This is so Gazebo knows where to find plugins when loading a world.
+export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/guth/git/udacity-robotics/Project1/build
+
+# Required for ROS.
+source /opt/ros/noetic/setup.zsh
+
+##### END Udacity Robotics section
+
+# Turn off bracketed paste mode
+bpe_off() { printf "\e[?2004l"; }
 
 #   my_ps: List processes owned by my user:
 #   ------------------------------------------------------------
