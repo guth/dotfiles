@@ -103,6 +103,7 @@ export EDITOR=/usr/local/bin/sub
 
 alias mkdir="mkdir -pv"
 alias sub="/usr/bin/subl"
+alias sshgt="~/sshgt.sh"
 
 #   ---------------------------
 #   4. SEARCHING
